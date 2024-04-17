@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="ChiZhang">
+        <link rel="canonical" href="https://yayachitang.com/write/Guidetobuildinganexternaldocumentcenter/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Intro - 鸭鸭池塘</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">鸭鸭池塘</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Writing your docs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Intro</a>
+</li>
+            
+<li>
+    <a href="../step/" class="dropdown-item">Step</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../style/styling/" class="dropdown-item">Styling your docs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/" class="dropdown-item">About</a>
+</li>
+                                    
+<li>
+    <a href="../../license/" class="dropdown-item">License</a>
+</li>
+                                    
+<li>
+    <a href="../../release-notes/" class="dropdown-item">Release Notes</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../step/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">简介</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">目标读者目标读者</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">教程目标</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">操作环境</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">前提条件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#mkdocs_1" class="nav-link">MkDocs操作简介</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">安装</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_7" class="nav-link">创建新项目</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_8" class="nav-link">文档预览</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_9" class="nav-link">添加页面</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">编辑导航页</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">设置主题</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_12" class="nav-link">更改图标</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_13" class="nav-link">构建网站</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_14" class="nav-link">部署</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_15" class="nav-link">其它</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>搭建对外文档中心</p>
+<h1 id="_1">简介</h1>
+<p>本教程为希望利用 GitHub 和 Read the Docs 托管 Markdown 文档并搭建在线技术文档中心的读者提供详细的指导与说明。通过本教程，读者将掌握从设置 Git 环境到发布在线文档的完整流程，最终建立在线技术文档中心。</p>
+<h2 id="_2">目标读者目标读者</h2>
+<p>本教程面向以下读者：</p>
+<ul>
+<li>掌握基本计算机操作，但技术基础相对薄弱，对 Git、GitHub 和 Markdown 不够熟悉的读者。</li>
+<li>希望搭建自己的在线技术文档中心的读者。</li>
+</ul>
+<h2 id="_3">教程目标</h2>
+<p>通过本教程，你将能够：</p>
+<ul>
+<li>安装并配置 Git，用于为构建技术文档版本管理体系。</li>
+<li>注册并授权 GitHub 账号，从而利用 GitHub 托管文档。</li>
+<li>安装和配置 VS Code 编辑器，配置一个高效、易用的文档编辑环境。</li>
+<li>掌握 Markdown 基础语法，编写格式清晰的文档。</li>
+<li>创建、编辑和推送文档到 GitHub 仓库，实现文档的版本管理与团队协作。</li>
+<li>通过 Read the Docs 构建在线文档中心。</li>
+</ul>
+<h2 id="_4">操作环境</h2>
+<p>本教程使用的软件及其版本如下：</p>
+<ul>
+<li>操作系统：Windows 11</li>
+<li>Git：2.41.0.windows.3</li>
+<li>GitHub：Free, pro, and team</li>
+<li>Read the Docs：Version 3.1</li>
+<li>VS Code：Version 1.81</li>
+</ul>
+<h2 id="_5">前提条件</h2>
+<p>在开始之前，请确保你已经掌握以下知识：</p>
+<ol>
+<li>了解MkDocs。更多信息，请参考<a href="https://markdown-docs-zh.readthedocs.io/zh-cn/latest/">MkDocs中文指南</a>。</li>
+<li>Git 的分支管理的原理以及常用 Git 指令的含义，如 Clone、Pull、Commit、Stage、Push、Merge 等。更多信息，参考 <a href="https://git-scm.com/docs">Git Reference</a>。</li>
+<li>GitHub 的基础操作及其与 Git 的关系。更多信息，参考 <a href="https://docs.github.com/zh/get-started">GitHub 入门文档</a>。</li>
+<li>了解 Read the Docs。更多信息，参考 <a href="https://docs.readthedocs.io/en/stable/">Read the Docs: documentation simplified</a>。</li>
+<li>VS Code 界面操作，及其与 Git 指令的关系。更多信息，参考 Introduction to Git in VS Code。</li>
+<li>Markdown 基础语法。具体语法，参考 <a href="https://www.markdownguide.org/basic-syntax/">Markdown Guideline</a>。</li>
+</ol>
+<h3 id="mkdocs">MkDocs</h3>
+<p>MkDocs是一个快速的、简单的、优美的静态网站生成器，专门用于构建项目文档。文档源文件以 Markdown 编写，并通过一个 YAML 配置文件进行配置。<a href="https://www.mkdocs.org/getting-started/">Getting Started</a> 和 <a href="https://www.mkdocs.org/user-guide/">User Guide</a>。</p>
+<ul>
+<li>MkDocs可以生成独立站点，或者仅用于生成较大站点的文档部分。</li>
+<li>
+<p>MkDocs基于Python编写，所有配置都用一个简单的配置文件管理，配置项的内容也仅有一页文档。它见名知意就是为Markdown而生，根据Markdown格式将内容渲染成美观的文档，并通过目录层级关系对应文档的树状结构，使得所有文档组织分明且层次递进。</p>
+</li>
+<li>
+<p>MkDocs可以从代码中提取函数文档，模块文档，以及类文档，将它们按照你的要求展示出来。</p>
+</li>
+<li>
+<p>MkDocs有很多扩展插件，可以显示 mermaid 流程图，数据公式。</p>
+</li>
+<li>
+<p>更多主题：https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes</p>
+</li>
+</ul>
+<h3 id="git">Git</h3>
+<p>Git是一个开源的<strong>分布式版本控制系统</strong>。</p>
+<ul>
+<li>
+<p>常用命令：</p>
+</li>
+<li>
+<p>git clone ：将远程仓库clone到本地计算机。</p>
+</li>
+<li>
+<p>git status ：展示工作区及暂存区域中不同状态的文件。</p>
+</li>
+<li>
+<p>git add ：将内容从工作目录添加到暂存区。</p>
+</li>
+<li>
+<p>git commit ：所有通过 git add 暂存的文件提交到本地仓库。</p>
+</li>
+<li>
+<p>git push ：将本地仓库的记录提交到远程仓库。</p>
+</li>
+<li>
+<p>git reset HEAD <file> ：从暂存区移除指定文件。</p>
+</li>
+<li>
+<p>git push ：拉取远程仓库的数据。</p>
+</li>
+<li>
+<p>git init</p>
+</li>
+</ul>
+<h3 id="github">Github</h3>
+<p>Github是基于 Git 的<strong>代码托管平台</strong>。</p>
+<ul>
+<li>因为只支持 Git 作为<strong>唯一的版本库</strong>格式进行托管，故名 GitHub，就是一个平台上面有无数个 Git 仓库——Git 版的百度云，承担存储远程仓库的作用。</li>
+<li>还可考虑Gitee (国内) 或者Gitlab (私有仓库免费，但社区不如Github)。</li>
+</ul>
+<h3 id="rtd-read-the-docs">RTD (Read the docs)</h3>
+<p>RTD (Read the docs) 是一个<strong>基于 Sphinx</strong> 的免费<strong>文档托管网站</strong>。</p>
+<ul>
+<li>在与Github连接上配置无误的情况下，当Github上有文件改动时，会自动触发RTD自动更新对应的文档。</li>
+<li>RTD提供了丰富的文档主题，有着灵活的配置，可以满足大部分的需求。</li>
+</ul>
+<h1 id="mkdocs_1">MkDocs操作简介</h1>
+<h2 id="_6">安装</h2>
+<p>在开始写文档之前，需要安装 3 个库：</p>
+<ul>
+<li>mkdocs</li>
+<li>主要的文档库核心</li>
+<li>mkdocstrings[python]</li>
+<li>负责从代码中提取文档</li>
+<li>mkdocs-material</li>
+<li>一个好看的代码主题</li>
+</ul>
+<pre><code class="language-c">pip install mkdocs -U
+pip install &quot;mkdocstrings[python]&quot; -U
+pip install mkdocs-material -U
+</code></pre>
+<p>查看是否安装成功</p>
+<pre><code class="language-c">mkdocs --version
+</code></pre>
+<h2 id="_7">创建新项目</h2>
+<pre><code class="language-c">mkdocs new my-project
+cd my-project
+</code></pre>
+<p>新项目路径下，有一个配置文件 <code>mkdocs.yml</code>, 和一个包含文档源码的 <code>docs</code> 文件夹. 在 <code>docs</code> 文件夹里包含了一个名为 <code>index.md</code> 的文档.</p>
+<pre><code>D:\GitHub&gt;mkdocs new GuideToBldExternalDocCenter
+INFO    -  Creating project directory: GuideToBldExternalDocCenter
+INFO    -  Writing config file: GuideToBldExternalDocCenter\mkdocs.yml
+INFO    -  Writing initial docs: GuideToBldExternalDocCenter\docs\index.md
+
+D:\GitHub&gt;cd GuideToBldExternalDocCenter
+</code></pre>
+<p><img alt="image-20240416155344623" src="../Guide%20to%20building%20an%20external%20document%20center.assets/image-20240416155344623.png" /></p>
+<h3 id="commands">Commands</h3>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs -h</code> - Print help message and exit.</li>
+</ul>
+<h3 id="project-layout">Project layout</h3>
+<pre><code class="language-bash">mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre>
+<h2 id="_8">文档预览</h2>
+<p>控制台切换当前目录到 <code>mkdocs.yml</code> 配置文件相同文件夹, 输入 <code>mkdocs serve</code> 命令以启动内建服务器:</p>
+<pre><code>D:\GitHub\GuideToBldExternalDocCenter&gt;mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+INFO    -  Documentation built in 0.12 seconds
+INFO    -  [16:14:49] Watching paths for changes: 'docs', 'mkdocs.yml'
+INFO    -  [16:14:49] Serving on http://127.0.0.1:8000/
+INFO    -  [16:15:26] Browser connected: http://127.0.0.1:8000/
+</code></pre>
+<p>在浏览器中打开 http://127.0.0.1:8000/ , 将看到以下页面:</p>
+<p><img alt="image-20240416162450690" src="../Guide%20to%20building%20an%20external%20document%20center.assets/image-20240416162450690.png" /></p>
+<h2 id="_9">添加页面</h2>
+<p>内建服务器支持在配置文件,文档目录或主题发生改变时自动载入并重新生成文档.</p>
+<p>编辑配置文件 <code>mkdocs.yml</code> 。 把 <code>site_name</code> 改成其他内容并保存文档。</p>
+<p><img alt="image-20240416165205583" src="../Guide%20to%20building%20an%20external%20document%20center.assets/image-20240416165205583.png" /></p>
+<p>刷新浏览器将看到网页标题已发生改变。</p>
+<p><img alt="image-20240416165434117" src="../Guide%20to%20building%20an%20external%20document%20center.assets/image-20240416165434117.png" /></p>
+<p>编辑 <code>docs/index.md</code> 文件并保存. 刷新浏览器你将看到文档被同步更新.</p>
+<h2 id="_10">编辑导航页</h2>
+<h2 id="_11">设置主题</h2>
+<h2 id="_12">更改图标</h2>
+<h2 id="_13">构建网站</h2>
+<h2 id="_14">部署</h2>
+<h2 id="_15">其它</h2>
+<h3 id="yaml">YAML基础语法</h3>
+<ol>
+<li>大小写敏感</li>
+<li>数据值前边必须有空格，作为分隔符</li>
+<li>使用缩进表示层级关系</li>
+<li>缩进时不允许使用Tab键，只允许使用空格（各个系统 Tab对应的 空格数目可能不同，导致层次混 乱）。</li>
+<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
+<li>"#"表示注释，从这个字符一直到行尾，都会被解析器忽略。</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

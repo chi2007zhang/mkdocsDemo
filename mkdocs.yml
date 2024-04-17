@@ -1,0 +1,33 @@
+site_name: 鸭鸭池塘
+site_description: 在线云文档
+site_author: ChiZhang
+site_url: https://yayachitang.com/
+repo_url: # 仓库地址
+repo_name: # 仓库名称
+edit_uri: ""
+
+# 主题配置
+theme:
+    name: mkdocs #material #
+    language: "zh"
+    #logo: 'images/logo.svg'
+    #logo:
+        #icon: 'mkdocs'
+    palette:
+        #primary: 'blue'
+        accent: 'deep orange'
+ 
+
+
+# 文档区
+nav:
+    - Home: 'index.md'
+    - 'User Guide': 
+        - 'Writing your docs':
+          - Intro : './write/Guidetobuildinganexternaldocumentcenter.md'
+          - Step : './write/step.md'
+        - 'Styling your docs': './style/styling.md'
+    - About: 
+        - 'about.md'
+        - 'License': 'license.md'
+        - 'Release Notes': 'release-notes.md'
