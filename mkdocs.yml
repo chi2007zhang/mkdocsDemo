@@ -8,14 +8,14 @@ edit_uri: ""
 
 # 主题配置
 theme:
-    name: mkdocs #material #
-    language: "zh"
+    name: readthedocs #material #
+    #language: "zh"
     #logo: 'images/logo.svg'
     #logo:
         #icon: 'mkdocs'
-    palette:
+    #palette:
         #primary: 'blue'
-        accent: 'deep orange'
+        #accent: 'deep orange'
  
 
 
