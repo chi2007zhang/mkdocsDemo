@@ -8,7 +8,7 @@ edit_uri: ""
 
 # 主题配置
 theme:
-    name: readthedocs #material #
+    name: material #readthedocs
     #language: "zh"
     #logo: 'images/logo.svg'
     #logo:
